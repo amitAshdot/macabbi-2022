@@ -44,6 +44,7 @@ picture {
 
 .cta {
     &-section {
+        position: relative;
         // border: 1px solid blue;
         max-width: 1920px;
         margin: auto;
@@ -51,6 +52,7 @@ picture {
         margin-inline-end: 0;
         margin-block-start: 14rem;
         margin-block-end: 11rem;
+        overflow: visible;
 
         @include respond(tab-port) {
             width: 100%;
@@ -268,11 +270,12 @@ picture {
             margin-top: 1rem;
             line-height: initial;
             font-size: 1.5rem;
+            top: -6rem;
 
             @include respond(tab-port) {
                 font-size: 4.5rem;
                 font-size: 4.5rem;
-                top: 55%;
+                top: -15rem;
                 width: 80%;
                 right: 50%;
                 transform: translate(50%, 0);
