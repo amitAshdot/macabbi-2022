@@ -294,3 +294,31 @@ picture {
         }
     }
 }
+
+
+.footer-section {
+    .logo-convert {
+        position: absolute;
+        left: 5rem;
+        bottom: 0rem;
+        cursor: pointer;
+
+        @include respond(tab-port) {
+            left: 50%;
+            bottom: 5rem;
+            transform: translateX(-50%);
+        }
+
+        &>img {
+            width: 9rem;
+            height: auto;
+            cursor: pointer;
+
+            @include respond(tab-port) {
+                width: 30rem;
+                height: auto;
+                cursor: pointer;
+            }
+        }
+    }
+}
